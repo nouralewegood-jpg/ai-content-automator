@@ -27,8 +27,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="border-b bg-white/80 backdrop-blur">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-indigo-600">مؤتمت المحتوى</div>
-          <Button asChild>
+          <div className="text-2xl font-bold text-indigo-700">مؤتمت المحتوى</div>
+          <Button asChild aria-label="تسجيل الدخول إلى النظام">
             <a href={getLoginUrl()}>دخول</a>
           </Button>
         </div>
@@ -43,10 +43,10 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-8">
             وليد محتوى فريد ونشره تلقائياً على جميع منصات التواصل الاجتماعي دون تدخل يدوي
           </p>
-          <Button size="lg" asChild className="gap-2">
+          <Button size="lg" asChild className="gap-2" aria-label="ابدأ الآن مجاناً باستخدام الذكاء الاصطناعي">
             <a href={getLoginUrl()}>
               ابدأ الآن مجاناً
-              <Zap className="w-5 h-5" />
+              <Zap className="w-5 h-5" aria-hidden="true" />
             </a>
           </Button>
         </div>
@@ -151,7 +151,7 @@ export default function Home() {
           <p className="text-lg mb-8 opacity-90">
             انضم إلى آلاف المستخدمين الذين يستخدمون مؤتمت المحتوى لتوسيع وجودهم الرقمي
           </p>
-          <Button size="lg" variant="secondary" asChild>
+          <Button size="lg" variant="secondary" asChild aria-label="إنشاء حساب جديد مجاناً">
             <a href={getLoginUrl()}>إنشاء حساب مجاني</a>
           </Button>
         </div>
